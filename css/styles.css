@@ -1,150 +1,368 @@
 body {
-    background-color: #EEEBDD;
-    margin: 0;
+    font-family: "Montserrat";
     text-align: center;
-    font-family: 'Merriweather', serif;
 }
 
-hr {
-    width: 5%;
-    border-style: none;
-    border-top-style: dotted;
-    border-color: gray;
-    border-width: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: #5F85DB;
+    font-size: 4rem;
 }
 
-h1 {
-    margin: 50px auto 0 auto;
-    font-family: 'Niconne', cursive;
-    font-size: 5.625rem;
-    color: #CE1212;
-    line-height: 2rem;
+p {
+    font-family: "Montserrat";
+    color: #90B8F8;
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    color: #CE1212;
-    font-weight: normal;
+/* Headings */
+.big-heading {
+    
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+    text-align: center;
 }
 
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: #810000;
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
-a {
-    color: #810000;
-    margin: 0 20px;
-    font-family: 'Merriweather', serif;
-    text-decoration: none;
+.feature-icons {
+    padding: 5% 10%;
 }
 
-a:hover {
-    color: #EEEBDD;
-}
-
-div {
-
-}
-
-.intro {
-    width: 30%;
-    margin: auto;
-    line-height: 2;
-}
-
-.Top-Container {
-    position: relative;
-    padding-top: 100px;
-}
-
-.Mmiddle-container {
-    margin: 100 auto;
-}
-
-.bottom-container {
-    position: relative;
-    background-color: #CE1212;
-    margin: 0;
-    padding: 50px;
-}
-
-.top-cloud {
+/* Title Image */
+.title-image {
+    width: 60%;
+    transform: rotate(25deg);
     position: absolute;
-    right: 300px;
-    top: 50px;
+    right: 30%;
 }
 
-.bottom-cloud {
-    position: absolute;
-    left: 300px;
-    bottom: 600px;
-    transform: scaleX(-1);
-}
-
-.knight-img {
-    width: 45%;
-    height: auto;
-}
-
-.skill-row {
-    width: 50%;
-    margin: 100px auto;
+#title {
     text-align: left;
-    line-height: 2;
-    overflow: auto;
 }
 
-.skillpic {
-    width: 25%;
-    float: left;
-    margin-right: 30px;
+@media (max-width: 990px) {
+    #title {
+        text-align: center;
+    }
+    
+    .title-image {
+        position: static;
+        transform: rotate(0deg);
+    }
 }
 
-.dragonpic {
-    width: 25%;
-    float: right;
-    margin-left: 30px;
+/* Feature */
+#feature {
+    position: relative;
 }
 
-.contact-me {
-    padding: 50px;
-    line-height: 2;
+.feature-icon-format {
+    size: 5rem;
 }
 
-.btn {
-    background: #CE1212;
-    background-image: -webkit-linear-gradient(top, #CE1212, #810000);
-    background-image: -moz-linear-gradient(top, #CE1212, #810000);
-    background-image: -ms-linear-gradient(top, #CE1212, #810000);
-    background-image: -o-linear-gradient(top, #CE1212, #810000);
-    background-image: linear-gradient(to bottom, #CE1212, #810000);
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 8px;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 40px 10px 40px;
+.feature-title {
+    font-size: 1.5rem;
+}
+
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+.container-fluid-features {
+    padding: 10% 10%;
+    background-color: #26282B;
+    position: relative;
+}
+
+/* Sections */
+.colored-section {
+    background-color: #353941;
+    color: white;
+}
+
+.white-section {
+    background-color: #26282B;
+}
+
+/* Navigation Bar */
+.navbar {
+    padding: 0 0 4.5rem 0;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navbar-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrate-Light";
+}
+
+/* Download buttons */
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+.fa-circle-check:hover {
+    color: red;
+}
+
+.fa-bullseye:hover {
+    color: red;
+}
+
+.fa-heart:hover {
+    color: red;
+}
+
+.feature-icon-format {
+    color: #5F85DB;
+    margin-bottom: 1rem;
+}
+
+/* testimonial */
+#testimonials {
+    background-color: #353941;
+}
+
+.test-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.test-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* hover portfolio section */
+.container{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+.container .card{
+    position: relative;
+    cursor: pointer;
+}
+
+.cardport{
+    background-color: #26282B;
+    border: 1px solid #26282B;
+}
+
+.cardport2{
+    background-color: #353941;
+    border: 1px solid #353941;
+}
+
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    background: #90B8F8;
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+    max-width: 250px;
+}
+
+.container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    color: #90B8F8;
+    font-size: 1rem;
+    line-height: 1;}
+
+.container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
     text-decoration: none;
-    line-height: 2;
-  }
+    font-weight: 900;
+    color: #26282B;
+    padding: 5px;
+    border: 1px solid #26282B;
+}
+
+.container .card .face.face2 .content a:hover{
+    background: #26282B;
+    color: #fff;
+}
+
+/* press section */
+#press {
+    background-color: #353941;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+/* pricing */
+#port {
+    padding: 7% 15%;
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.card-deck {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.price-col {
+    padding: 3% 2%;
+}
+
+#cta {
+    padding: 7% 15%;
+}
+
+/* footer */
+#footer {
+    padding: 4% 30%;
+    background-color: #26282B;
+}
+
+.copy-footer {
+    color: gray;
+    font-size: 1.0rem;
+    font-family: "Montserrate";
+}
+
+.footer-contact {
+    color: gray;
+    padding: 1%;
+}
+
+.footer-hover {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    top: 75%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
   
-  .btn:hover {
-    background: #810000;
-    background-image: -webkit-linear-gradient(top, #810000, #1B1717);
-    background-image: -moz-linear-gradient(top, #810000, #1B1717);
-    background-image: -ms-linear-gradient(top, #810000, #1B1717);
-    background-image: -o-linear-gradient(top, #810000, #1B1717);
-    background-image: linear-gradient(to bottom, #810000, #1B1717);
-    text-decoration: none;
-  }
-
-  .copyright {
-    color: #EEEBDD;
-    padding: 20px 0px;
-    font-size: 0.75rem;
-  }
+.footer-hover li {
+    list-style: none;
+    margin: 0 15px;
+}
+  
+.footer-hover li a {
+    position: relative; 
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
+}
+  
+.footer-hover li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #90B8F8;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+  
+.footer-hover li a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #90B8F8;
+}
+  
+.footer-hover li a:hover {
+    color: #90B8F8;
+    box-shadow: 0 0 5px #90B8F8;
+    text-shadow: 0 0 5px #90B8F8;
+}
