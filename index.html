@@ -1,64 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desperado Designs</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="favicon" href="dragonfav.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@200&family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="Top-Container">
-        <img class="top-cloud" src="images/topdragon.webp" alt="cloud-img">
-        <h1>I'm Chris</h1>
-        <h2>Web Developer/Streamer</h2>
-        <img class="bottom-cloud" src="images/bottomdragon.webp" alt="cloud-img">
-        <img class="knight-img" src="images/giphy.gif" alt="mountain-img">
-    </div>
+<html>
 
-    <div class="middle-container">
-        <div class="profile">
-          <img src="images/sunglasses.png" alt="sunglasses">
-          <h2>Hello.</h2>
-          <p class="intro">I am a starting web developer, I live stream gameplay on Facebook Live, I work at Amazon as an Operations Manager and I play guitar and love to read books.</p>
-        </div>
-        <hr>
-        <div class="skills">
-          <h2>My Skills.</h2>
-          <div class="skill-row">
-            <img class="skillpic" src="images/develop.webp" alt="develop">
-            <h3>Development and Streaming</h3>
-            <p>All my life I've learned how to program but I found web development to be particularly interesting. I also host a Facebook channel where I stream mostly single player gameplay.</p>
-          </div>
-          <div class="skill-row">
-            <img class="dragonpic" src="images/dragon.webp" alt="dragon">
-            <h3>Dragons!!</h3>
-            <p>I've always had a fascination with dragons and the fantasy realm.</p>
-          </div>
-        </div>
-        <hr>
-        <div class="contact-me">
-          <h2>Get In Touch</h2>
-          <h3>Easily contacted through my primary email.</h3>
-          <p>Interested in how I can assist with your web development needs?</p>
-          <a class="btn" href="mailto:cdwitherfist88@comcast.net">CONTACT ME</a>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <title>Desperado Designs</title>
+  <!-- Bootstrap loader -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Bootstrap loader body -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/8f6cef51da.js" crossorigin="anonymous"></script>
+
+  <section class="colored-section" id="title">
+    <video autoplay muted loop class="position-absolute full-width full-height">
+      <source src="video/galaxy.mp4" type="video/mp4">
+    </video>
+    <div class="container-fluid">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="">Desperado Designs</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+              <li class="navbar-item">
+                  <a class="nav-link" href="#about_anchor">About</a>
+              </li>
+              <li class="navbar-item">
+                  <a class="nav-link" href="#services_anchor">Services</a>
+              </li>
+              <li class="navbar-item">
+                  <a class="nav-link" href="#port">Portfolio</a>
+              </li>
+              <li class="navbar-item">
+                  <a class="nav-link" href="#cta">Live Streams</a>
+              </li>
+              <li class="navbar-item">
+                  <a class="nav-link" href="#footer">Contacts</a>
+              </li>
+        </ul>
       </div>
-      
-      
-      <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-        <a class="footer-link" href="https://twitter.com/">Twitter</a>
-        <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-        <p class="copyright">© Chris DeProspero @ Desperado Designs</p>
+    </nav>
+
+
+
+    <!-- Title -->
+
+    <div class="row">
+      <div class="col">
+        <h1 class="big-heading">Live Streaming / Web Development</h1>
       </div>
-      
+    </div>
+  </div>
+  </section>
+
+
+  <!-- About Me -->
+  <div id="about_anchor" class="container-fluid-features">
+  <section class="white-section" id="features">
+    <div class="feature-icons row">
+      <div class="col" style="background-color: white border 1px solid;">
+        <h3 class="feature-title">Chris "Desperado" DeProspero</h3>
+        <p>I am a graduate of UC Davis. I currently work as an Operations Manager. 
+          I stream mostly single-player game experiences on Twitch while uploading these streams
+        to Facebook and YouTube. I also provide web development services, providing simple, clean
+      and responsive solutions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- What I do -->
+
+  <section id="services_anchor" class="colored-section" id="testimonials">
+    <a ></a>
+    <div class="feature-icons row">
+      <div class="col-sm" style="background-color: white border 1px solid;">
+        <i class="feature-icon-format fa-solid fa-gamepad fa-5x"></i>
+        <h3 class="feature-title">Live-Streaming</h3>
+        <p>Live streaming on Twitch! Missed the stream? Catch the download on Facebook or Youtube</p>
+      </div>
+      <div class="col-sm" style="background-color: white border 1px solid;">
+        <i class="feature-icon-format fa-solid fa-computer fa-5x"></i>
+        <h3 class="feature-title">Web Development</h3>
+        <p>Need a website for yourself or business? Let's connect, I can help!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+
+  <section class="white-section" id="port">
+
+    <section>
+      <div class="rt-container">
+            <div class="col-rt-12">
+                <div class="Scriptcontent">
+                
+                <!-- DEMO CONTENT -->
+              <div class="container">
+          <div class="card cardport">
+              <div class="face face1">
+                  <div class="content">
+                      <img src="portfolio/chris.png">
+                  </div>
+              </div>
+              <div class="face face2">
+                  <div class="content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                          <a href="#">Page Content</a>
+                  </div>
+              </div>
+          </div>
+          <div class="card cardport">
+              <div class="face face1">
+                  <div class="content">
+                      <img src="portfolio/tindog.png">
+                  </div>
+              </div>
+              <div class="face face2">
+                  <div class="content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                          <a href="#">Page Content</a>
+                  </div>
+              </div>
+          </div>
+          <div class="card cardport">
+              <div class="face face1">
+                  <div class="content">
+                    <img src="portfolio/tindog.png">
+                  </div>
+              </div>
+              <div class="face face2">
+                  <div class="content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                          <a href="#">Page Content</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+             
+          </div>
+      </div>
+      </div>
+  </section>
+  </section>
+
+
+  <!-- Streaming -->
+
+  <section class="colored-section" id="cta">
+
+    <section>
+      <div class="rt-container">
+            <div class="col-rt-12">
+                <div class="Scriptcontent">
+                
+                <!-- DEMO CONTENT -->
+              <div class="container">
+          <div class="card cardport2">
+              <div class="face face1">
+                  <div class="content">
+                    <iframe src="https://www.youtube.com/embed/RxeGbkLfwrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+              </div>
+              <div class="face face2">
+                  <div class="content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                          <a href="#">Watch Video</a>
+                  </div>
+              </div>
+          </div>
+          <div class="card cardport2">
+              <div class="face face1">
+                  <div class="content">
+                    <iframe src="https://www.youtube.com/embed/RxeGbkLfwrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                  </div>
+              </div>
+              <div class="face face2">
+                  <div class="content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                          <a href="#">Watch Video</a>
+                  </div>
+              </div>
+          </div>
+          <div class="card cardport2">
+              <div class="face face1">
+                  <div class="content">
+                    <iframe src="https://www.youtube.com/embed/RxeGbkLfwrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                  </div>
+              </div>
+              <div class="face face2">
+                  <div class="content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                          <a href="#">Watch Video</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+             
+          </div>
+      </div>
+      </div>
+  </section>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <ul class="footer-hover">
+      <li>
+        <a href="#">
+          <i class="footer-contact fa-s fa-brands fa-twitch"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="footer-contact fa-s fa-brands fa-facebook"></i>
+        </a>
+        </li>
+      <li>
+        <a href="#">
+          <i class="footer-contact fa-s fa-brands fa-youtube"></i>
+        </a>        
+      </li>
+      <li>
+        <a href="#">
+          <i class="footer-contact fa-sm fa-regular fa-envelope"></i>
+        </a> 
+      </li>
+    </ul>
+    <p class="copy-footer">© Copyright 2023 Desperado Designs</p>
+  </footer>
+
 
 </body>
+
 </html>
