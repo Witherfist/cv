@@ -17,6 +17,23 @@ p {
     line-height: 1.5;
 }
 
+video {
+    height: auto;
+    width: 100%;
+}
+
+.pagination .page-link {
+    background: #163172;
+    color: white;
+}
+
+.cardformat {
+    background-color: #163172;
+    font-family: "Montserrat";
+    color: #90B8F8;
+    line-height: 1.5;
+}
+
 /* Headings */
 .big-heading {
     
@@ -151,7 +168,7 @@ p {
 
 /* hover portfolio section */
 .container{
-    width: 1000px;
+    width: 1680px;
     position: relative;
     display: flex;
     justify-content: space-between;
