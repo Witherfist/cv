@@ -18,8 +18,6 @@ p {
 }
 
 video {
-    position: static;
-    top: 0;
     left: 0%;
     height: auto;
     width: 100%;
@@ -78,7 +76,7 @@ video {
     }
 
     video {
-        position: static;
+        position: absolute;
         top: 0;
         left: 0;
         height: 100%;
